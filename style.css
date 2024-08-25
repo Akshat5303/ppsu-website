@@ -1,0 +1,364 @@
+@import url('https://fonts.google.com/specimen/Roboto+Slab');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
+    font-family: 'rancho', sans-serif;
+}
+
+h1{
+    font-size: 50px;
+    line-height: 64px;
+    color: black;
+}
+
+h2{
+    font-size: 30px;
+    color: black;
+}
+
+.section-p1{
+    padding: 40px 80px;
+}
+
+.section-m1{
+    margin: 50px 0;
+}
+
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background-color: #ffffff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+#head{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    padding: 7px 80px;
+    background-color: #ffaeae;
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#navbar li{
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+#navbar li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+    transition: 0.1s ease;
+}
+
+#navbar li a:hover,
+#navbar lia.active{
+        color: rgb(229, 20, 20);
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after{
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: rgba(255, 0, 0, 0.745);
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+#hero{
+    background-image: url("img/PPSU1.jpg");
+    height: 92vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 25% right 0;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+
+
+#hero h1{
+    color: red;
+    margin-top: -350px;
+}
+
+#career{
+    text-align: center;
+    
+}
+
+#branch{
+    display: block flex;
+    align-items: center;
+    justify-content: inherit;
+    flex-wrap: wrap;
+    padding-left: 200px;
+}
+
+#branch .fe-box:hover{
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.703);
+}
+
+#branch .fe-box h3{
+    display: flex;
+    padding: 80px 85px;
+    line-height: 1;
+    border-radius: 4px;
+    color: #000000;
+    background-color: rgb(185, 235, 136);
+    text-align: center;
+    cursor: pointer;
+}
+
+#branch .fe-box:nth-child(2) h3{
+    background-color: #c0b9d7;
+}
+
+#branch .fe-box:nth-child(3) h3{
+    background-color: #eeaab7;
+}
+
+#branch .fe-box:nth-child(4) h3{
+    background-color: #999baa;
+}
+
+#branch .fe-box:nth-child(5) h3{
+    background-color: #dfab88;
+}
+
+#branch .fe-box:nth-child(6) h3{
+    background-color: #d1a1bd;
+}
+
+#branch .fe-box:nth-child(7) h3{
+    background-color: #bedbd0;
+}
+
+#branch .fe-box:nth-child(8) h3{
+    background-color: #eae494;
+}
+
+#branch .fe-box:nth-child(9) h3{
+    background-color: #beddc3;
+}
+
+#branch .fe-box:nth-child(10) h3{
+    background-color: #cea8ea;
+}
+
+#branch .fe-box:nth-child(11) h3{
+    background-color: #b1d7a6;
+}
+
+#branch .fe-box:nth-child(12) h3{
+    background-color: #e9cf9b;
+}
+
+
+
+/*   Eng page   */
+
+#eng{
+    text-align: left;
+    text-decoration: solid;
+    padding-top: 50px;
+    list-style: none;
+
+}
+
+/*   */
+
+#event{
+    background-image: url("img/event.jpeg");
+    height: 92vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 25% right 0;
+    padding: 50px 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+/*   */
+
+#about{
+    display: block flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 80px 70px 20px 70px;
+    background-color: darkgray;
+}
+
+#about .box h3{
+    display: flex;
+    padding: 80px 85px;
+    line-height: 1;
+    border-radius: 4px;
+    color: #000000;
+    background-color: rgb(192, 217, 174);
+    text-align: center;
+    cursor: pointer;
+    flex-wrap: wrap;
+    width: 400px;
+    margin: 10px;
+    text-align: center;
+    height: 200px;
+}
+#about .box:nth-child(2) h3{
+    background-color: #d5a1ea;
+}
+
+#about .box:nth-child(3) .img{
+    background-color: #9078dd;
+}
+
+#about .box:nth-child(4) h3{
+    background-color: #666d99;
+}
+
+#about .box:nth-child(5) h3{
+    background-color: #afe2e7;
+}
+
+#about .box:nth-child(6) h3{
+    background-color: #eba3cd;
+}
+  
+/* La.html  */
+
+#info{
+    display: block flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 80px 70px 20px 70px;
+    
+}
+
+#info .box h3{
+    display: flex;
+    padding: 30px 50px;
+    line-height: 1;
+    border-radius: 4px;
+    color: #000000;
+    background-color: rgb(158, 224, 206);
+    text-align: center;
+    cursor: pointer;
+    flex-wrap: wrap;
+    width: 300px;
+    margin: 10px;
+    height: 50px;           
+}
+
+/*   */
+
+
+#page-header{
+    background-image: url("img/banner.png");
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 16px;
+}
+
+#page-header h2{
+    color: #fff;
+}
+
+
+#page-header{
+    display: flex;
+    align-items: center;
+
+}
+
+#page-header img{
+    width: 50%;
+    height: auto;
+}
+
+#about-head div{
+    padding-left: 40px;
+}
+
+#about-app{
+    text-align: center;
+}
+
+#contact-details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#contact-details .details{
+    width: 40%;
+}
+
+#contact-details .details span{
+    font-size: 12px;
+}
+
+#contact-details .details h3{
+    font-size: 26px;
+    padding-bottom: 15px;
+}
+
+#contact-details .details li{
+    list-style: none;
+    display: flex;
+    padding: 10px 0;
+}
+
+#contact-details .details li i{
+    font-size: 14px;
+    padding-right: 22px;
+}
+
+#contact-details .details li p{
+    margin: 0;
+    font-size: 18px;
+}
+
+#contact-details .map{
+    width: 55%;
+    height: 400px;
+
+}
+
+#contact-details .map iframe{
+    width: 100%;
+    height: 100%;
+    
+}
+
+
+
